@@ -49,8 +49,8 @@ Production-ready PostgreSQL High Availability cluster with automatic failover us
 
 ```bash
 # Clone the repository
-git clone https://github.com/yourusername/patroni-railway-template
-cd patroni-railway-template
+git clone https://github.com/utsav-pal/Patroni-PostgreSQL-High-Availability.git
+cd Patroni-PostgreSQL-High-Availability
 
 # Start the cluster
 docker compose up -d
@@ -111,7 +111,7 @@ docker compose stop patroni1
 docker compose exec patroni2 patronictl list
 
 # 4. Verify connection still works
-psql -h localhost -p 5432 -U postgres -c "SELECT pg_is_in_recovery();"
+psql -h localhost -p 15432 -U postgres -c "SELECT pg_is_in_recovery();"
 # Should return 'f' (false = primary)
 
 # 5. Bring back old leader (becomes replica)

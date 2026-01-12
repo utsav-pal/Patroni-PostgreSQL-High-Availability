@@ -10,9 +10,9 @@
 #   docker compose logs -f
 #   docker compose exec patroni1 patronictl list
 #
-# Ports:
-#   5432 - PostgreSQL primary (read-write)
-#   5433 - PostgreSQL replicas (read-only, load balanced)
+# Ports (local testing):
+#   15432 - PostgreSQL primary (read-write) -> maps to container port 5432
+#   15433 - PostgreSQL replicas (read-only) -> maps to container port 5433
 #   8404 - HAProxy stats dashboard
 
 networks:
