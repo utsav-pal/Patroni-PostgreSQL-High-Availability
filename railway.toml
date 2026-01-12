@@ -1,0 +1,11 @@
+# Railway Configuration
+# This file configures how Railway builds and deploys the services
+
+[build]
+builder = "dockerfile"
+
+[deploy]
+healthcheckPath = "/health"
+healthcheckTimeout = 300
+restartPolicyType = "on_failure"
+restartPolicyMaxRetries = 3
