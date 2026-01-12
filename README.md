@@ -1,6 +1,6 @@
 # 🐘 Patroni PostgreSQL High Availability - Railway Template
 
-[![Deploy on Railway](https://railway.app/button.svg)](https://railway.app/template/patroni-ha)
+[![Deploy on Railway](https://railway.com/button.svg)](https://railway.com/deploy/patroni-1?referralCode=utsavpal&utm_medium=integration&utm_source=template&utm_campaign=generic)
 
 Production-ready PostgreSQL High Availability cluster with automatic failover using Patroni, etcd, and HAProxy.
 
